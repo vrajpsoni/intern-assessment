@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1>Update Task</h1>
+    <form method="post" action="/update/<%= task.id %>">
+        <table>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" value="<%= task.title %>" name="txt1" /></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><select name="txt2">
+                    <option>Pending</option>
+                    <option>Completed</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

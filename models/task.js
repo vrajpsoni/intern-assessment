@@ -15,6 +15,11 @@ Task.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "Pending", // Set default value to "pending"
+    },
   },
   {
     sequelize, // Pass the connection instance
